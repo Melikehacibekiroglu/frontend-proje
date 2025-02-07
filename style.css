@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d1e0ec;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    height: 80vh;
+    box-shadow: 0 0 15px rgb(247, 49, 131);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    background: url(img/kediresmi.jpg)no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h2 {
+    color: white;
+    font-size: 28px;
+    background: rgba(247, 49, 131);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.right {
+    width: 50%;
+    background-color: #e2eef3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h2 {
+    position: absolute; 
+    right: 20px;  /* Sağa taşı */
+    top: 20px;  /* Yukarıdan boşluk bırak */
+    background-color: #024110;  /* Açık kırmızı arka plan */
+    color: #fcfcfc;  /* Yazı rengi */
+    font-family: "Arial", sans-serif;  /* Yazı tipi */
+    font-size: 20px;  /* Yazı boyutu */
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgb(247, 49, 131);
+}
+
+
+textarea {
+    width: 90%;
+    height: 120px;
+    padding: 10px;
+    border: 2px solid #d4ebb0;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+button {
+    width: 90%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #024110;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #a8ff57;
+}
+.right h2 {
+    font-size: 26px;  /* Daha büyük font */
+    font-weight: bold; /* Kalın font */
+    color: #024110; /* Parlak mavi renk */
+    text-transform: uppercase; /* Büyük harf */
+    text-shadow: 2px 2px 5px rgba(17, 44, 2, 0.3); /* Hafif gölge efekti */
+    padding: 10px;
+    
+    display: inline-block; /* Sadece başlığın altına çizgi ekler */
+}
+/* 1️⃣ Küçük ekranlar (Mobil) için */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* İçeriği dikey hizala */
+        width: 90%;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 100%;
+        height: 50vh; /* Yüksekliği azalt */
+    }
+
+    .left h2 {
+        position: relative; /* Sabit konumu kaldır */
+        right: auto;
+        top: auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .right {
+        padding: 20px;
+    }
+
+    .right h2 {
+        font-size: 24px; /* Başlığı biraz küçült */
+        text-align: center; /* Ortala */
+        padding: 10px;
+    }
+
+    textarea {
+        width: 100%; /* Genişlik tam olsun */
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* 2️⃣ Orta boyutlu ekranlar (Tabletler) için */
+@media (max-width: 1024px) {
+    .container {
+        width: 85%;
+    }
+
+    .left h2 {
+        font-size: 22px;
+    }
+
+    .right h2 {
+        font-size: 24px;
+    }
+}

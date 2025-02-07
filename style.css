@@ -51,12 +51,12 @@ body {
 
 .left h2 {
     position: absolute; 
-    right: 20px;  /* Sağa taşı */
-    top: 20px;  /* Yukarıdan boşluk bırak */
-    background-color: #024110;  /* Açık kırmızı arka plan */
-    color: #fcfcfc;  /* Yazı rengi */
-    font-family: "Arial", sans-serif;  /* Yazı tipi */
-    font-size: 20px;  /* Yazı boyutu */
+    right: 20px;
+    top: 20px;  
+    background-color: #024110; 
+    color: #fcfcfc;  
+    font-family: "Arial", sans-serif; 
+    font-size: 20px; 
     padding: 10px 15px;
     border-radius: 8px;
     font-weight: bold;

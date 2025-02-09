@@ -91,7 +91,7 @@ button:hover {
     background-color: #a8ff57;
 }
 .right h2 {
-    font-size: 26px;  /* Daha büyük font */
+    font-size: 36px;  /* Daha büyük font */
     font-weight: bold; /* Kalın font */
     color: #024110; /* Parlak mavi renk */
     text-transform: uppercase; /* Büyük harf */
@@ -153,4 +153,99 @@ button:hover {
     .right h2 {
         font-size: 24px;
     }
+}
+.feedback {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 1000;
+    animation: fadeInOut 2s ease-in-out;
+}
+
+.feedback.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.feedback.error {
+    background-color: #D32F2F;
+    color: white;
+}
+#note-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Notları sola hizalar */
+    max-width: 100%;
+}
+
+.note-item {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* Sayfanın genişliğine uyum sağlar */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4CAF50; /* Notları belirginleştirmek için sol kenar ekler */
+    position: relative; /* Sayfaya uygun şekilde konumlandırır */
+}
+
+.delete-btn {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #b71c1c;
+}
+/* Not listesi başlangıçta gizli olacak */
+#note-list {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+#note-list.show {
+    display: block; /* "Notlarım" butonuna basınca açılacak */
+}
+
+/* Not öğelerini düzgün hizala */
+.note-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.delete-note {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
 }

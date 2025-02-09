@@ -249,3 +249,18 @@ button:hover {
     padding: 5px;
     border-radius: 5px;
 }
+a{
+    
+        width: 90%;
+        padding: 12px;
+        margin-top: 10px;
+        background-color: #024110;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    
+    
+}

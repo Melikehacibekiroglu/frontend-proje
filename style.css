@@ -70,6 +70,7 @@ textarea {
     padding: 10px;
     border: 2px solid #d4ebb0;
     border-radius: 5px;
+
     background-color: #fff;
     font-size: 16px;
 }
@@ -86,6 +87,7 @@ button {
     cursor: pointer;
     transition: 0.3s;
     cursor: pointer;
+    
 }
 
 button:hover {
